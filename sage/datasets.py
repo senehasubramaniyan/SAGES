@@ -31,8 +31,7 @@ def bank():
         'Loan', 'Contact', 'Day', 'Month', 'Duration', 'Campaign', 'Prev Days',
         'Prev Contacts', 'Prev Outcome', 'Success']
     path = os.path.join(github_data_url, 'bank-full.csv')
-    df = pd.read_table(path, sep=';', header=None, index_col=None, skiprows=1,
-                       names=columns)
+    df = pd.read_table(path, sep=';', header=None, index_col=None, skiprows=1,names=columns)
 
     # Convert label.
     df['Success'] = (df['Success'] == 'yes')

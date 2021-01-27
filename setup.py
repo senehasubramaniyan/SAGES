@@ -16,7 +16,7 @@ setuptools.setup(
         the [paper](https://arxiv.org/abs/2004.00668) for more details.
     """,
     long_description_content_type="text/markdown",
-    url="https://github.com/iancovert/sage/",
+    url="https://github.com/senehasubramaniyan/SAGES/",
     packages=['sage'],
     install_requires=[
         'numpy',

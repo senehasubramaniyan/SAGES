@@ -47,6 +47,17 @@ def green():
     df['c16'] = (df['c16'] == 1)
     return df
 
+def Malware():
+    columns = ['c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','c11','c12','c13','c14','c15','c16']
+
+    path = os.path.join(github_data_url, 'Malware.csv')
+    df = pd.read_table(path, sep=',', header=None, index_col=None, skiprows=1,
+                       names=columns)
+    # Convert label.
+    df['c16'] = (df['c16'] == 1)
+    return df
+
+
 def bike():
     '''
     Bike sharing dataset from Kaggle competition.
